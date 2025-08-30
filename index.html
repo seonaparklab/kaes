@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>환경사회학회 회비 납부 여부 자가 점검</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/300a6a59-c445-4a15-a3d9-2c6af7dc2967.png" alt="환경 테마 일러스트" class="environment-image">
+                <h1 class="main-title">환경사회학회 회비 납부 여부 자가 점검 홈페이지</h1>
+                <p class="instructions">아래 검색창에 성함을 입력하여 2024년과 2025년 회비 납부 상태를 확인하실 수 있습니다.</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="성함을 입력하세요"
+                        autocomplete="off"
+                    >
+                    <button id="searchBtn" class="search-btn">검색</button>
+                </div>
+                
+                <div id="autocompleteDropdown" class="autocomplete-dropdown hidden">
+                    <!-- Autocomplete suggestions will be populated here -->
+                </div>
+            </div>
+
+            <div id="searchResults" class="search-results hidden">
+                <!-- Search results will be displayed here -->
+            </div>
+
+            <div id="noResults" class="no-results hidden">
+                <p>검색 결과가 없습니다. 정확한 성함을 입력해 주세요.</p>
+                <button id="resetSearch" class="btn btn--outline">다시 검색하기</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
